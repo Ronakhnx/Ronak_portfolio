@@ -1,19 +1,28 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { TypeAnimation } from 'react-type-animation';
-import { ChevronDown, Download } from 'lucide-react';
-
+import React from "react"
+import { motion } from "framer-motion"
+import { TypeAnimation } from "react-type-animation"
+import { ChevronDown, Download } from "lucide-react"
+import LetterGlitch from "./LetterGlitch"
 const Hero = () => {
   const handleDownloadCV = () => {
     // Replace with your actual CV file URL
-    const cvUrl = '/path-to-your-cv.pdf';
-    window.open(cvUrl, '_blank');
-  };
+    const cvUrl = "/path-to-your-cv.pdf"
+    window.open(cvUrl, "_blank")
+  }
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden section-gradient">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden section-gradient"
+    >
       <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black animate-gradient" />
-      
+
+      <LetterGlitch
+        glitchSpeed={50}
+        centerVignette={true}
+        outerVignette={false}
+        smooth={true}
+      />
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -24,11 +33,11 @@ const Hero = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
             <TypeAnimation
               sequence={[
-                'Hi, I\'m Ronak Radadiya',
+                "Hi, I'm Ronak Radadiya",
                 1000,
-                'I\'m a Full Stack Web Developer',
+                "I'm a Full Stack Web Developer",
                 1000,
-                'I Create Digital Experiences',
+                "I Create Digital Experiences",
                 1000,
               ]}
               wrapper="span"
@@ -36,21 +45,26 @@ const Hero = () => {
               repeat={Infinity}
             />
           </h1>
-          
+
           <p className="text-gray-400 text-lg md:text-xl mb-12 max-w-2xl mx-auto">
-            Crafting sleek and efficient digital experiences through modern web technologies
+            Crafting sleek and efficient digital experiences through modern web
+            technologies
           </p>
-          
+
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="futuristic-button"
-              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() =>
+                document
+                  .getElementById("projects")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
             >
               View My Work
             </motion.button>
-            
+
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -72,7 +86,7 @@ const Hero = () => {
         <ChevronDown size={32} className="animate-bounce" />
       </motion.div>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero
