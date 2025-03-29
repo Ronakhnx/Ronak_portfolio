@@ -2,7 +2,7 @@
 import { motion } from "framer-motion"
 import { TypeAnimation } from "react-type-animation"
 import { ChevronDown, Download } from "lucide-react"
-//import Squares from "../components/ui/Squares"
+   //import Squares from "../components/ui/Squares"
 
 const Hero = () => {
   const handleDownloadCV = () => {

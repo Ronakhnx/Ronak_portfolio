@@ -41,7 +41,7 @@ const About = () => {
                   className="w-full h-64 object-cover rounded-lg mb-6 neon-hover"
                 />
                 <p className="text-gray-300 leading-relaxed">
-                  A passionate web developer with 5+ years of experience in creating modern, efficient, and scalable web applications. I specialize in React, Node.js, and modern web technologies, always staying at the forefront of digital innovation.
+                  A passionate web developer with 1+ years of experience in creating modern, efficient, and scalable web applications. I specialize in React, Node.js, and modern web technologies, always staying at the forefront of digital innovation.
                 </p>
               </div>
             </motion.div>
