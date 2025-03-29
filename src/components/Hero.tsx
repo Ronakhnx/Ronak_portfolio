@@ -1,12 +1,13 @@
-import React from "react"
+
 import { motion } from "framer-motion"
 import { TypeAnimation } from "react-type-animation"
 import { ChevronDown, Download } from "lucide-react"
-import LetterGlitch from "./LetterGlitch"
+//import Squares from "../components/ui/Squares"
+
 const Hero = () => {
   const handleDownloadCV = () => {
     // Replace with your actual CV file URL
-    const cvUrl = "/path-to-your-cv.pdf"
+    const cvUrl = "/"
     window.open(cvUrl, "_blank")
   }
 
@@ -17,12 +18,7 @@ const Hero = () => {
     >
       <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black animate-gradient" />
 
-      <LetterGlitch
-        glitchSpeed={50}
-        centerVignette={true}
-        outerVignette={false}
-        smooth={true}
-      />
+   
       <div className="container mx-auto px-6 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -90,3 +86,4 @@ const Hero = () => {
 }
 
 export default Hero
+
