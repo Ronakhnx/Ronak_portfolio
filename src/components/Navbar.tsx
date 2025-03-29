@@ -28,7 +28,7 @@ const Navbar = () => {
             animate={{ opacity: 1, x: 0 }}
             className="text-2xl font-bold"
           >
-            Portfolio
+            Ronak.dev
           </motion.div>
 
           <div className="hidden md:flex items-center space-x-8">

@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="glass-panel p-8 relative z-10">
           <div className="grid md:grid-cols-3 gap-8 items-center">
             <div>
-              <h3 className="text-xl font-bold mb-4">Portfolio</h3>
+              <h3 className="text-xl font-bold mb-4">Ronak.dev</h3>
               <p className="text-gray-400">Crafting digital experiences with precision and creativity.</p>
             </div>
             

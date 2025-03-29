@@ -35,19 +35,19 @@ const Contact = () => {
                     <div className="p-3 rounded-full bg-white/5 group-hover:bg-white/10 transition-colors">
                       <Mail size={24} />
                     </div>
-                    <span className="text-lg">john.doe@example.com</span>
+                    <span className="text-lg">rronak4674@gmail.com</span>
                   </div>
                   <div className="flex items-center space-x-4 group">
                     <div className="p-3 rounded-full bg-white/5 group-hover:bg-white/10 transition-colors">
                       <Phone size={24} />
                     </div>
-                    <span className="text-lg">+1 (555) 123-4567</span>
+                    <span className="text-lg">+91 8200676228</span>
                   </div>
                   <div className="flex items-center space-x-4 group">
                     <div className="p-3 rounded-full bg-white/5 group-hover:bg-white/10 transition-colors">
                       <MapPin size={24} />
                     </div>
-                    <span className="text-lg">San Francisco, CA</span>
+                    <span className="text-lg">Surat, India</span>
                   </div>
                 </div>
               </div>

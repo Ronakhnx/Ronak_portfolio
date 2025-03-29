@@ -10,9 +10,9 @@ const About = () => {
   });
 
   const skills = [
-    { name: 'Frontend Development', icon: Code2, level: 90 },
-    { name: 'UI/UX Design', icon: Palette, level: 85 },
-    { name: 'Backend Development', icon: Terminal, level: 80 },
+    { name: 'Frontend Development', icon: Code2, level: 60 },
+    { name: 'UI/UX Design', icon: Palette, level: 50 },
+    { name: 'Backend Development', icon: Terminal, level: 90 },
     { name: 'System Architecture', icon: Cpu, level: 75 },
   ];
 
